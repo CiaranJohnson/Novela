@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "501113003637",
+    "firebase_url": "https://novela-bbd01.firebaseio.com",
+    "project_id": "novela-bbd01",
+    "storage_bucket": "novela-bbd01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501113003637:android:129a456810e82a51",
+        "android_client_info": {
+          "package_name": "com.example.novela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501113003637-09589pal30gaqtigpm9q66se3t988or2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.novela",
+            "certificate_hash": "de97fa7ad15ff11a3d5cfb6ef70cca3732bcde97"
+          }
+        },
+        {
+          "client_id": "501113003637-bg7csb2ghmmv1mmlcfud43ov55qjihf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeACET2j0tnQIQYhf0dDYpojtzdTcxGXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501113003637-bg7csb2ghmmv1mmlcfud43ov55qjihf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
