@@ -3,4 +3,8 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
+    <string name="email">Email...</string>
+    <string name="username">Name...</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
 </resources>
