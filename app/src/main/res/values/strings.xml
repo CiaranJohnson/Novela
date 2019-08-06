@@ -7,4 +7,12 @@
     <string name="username">Name...</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
+    <string name="password">Password...</string>
+    <string name="confirm_password">Confirm Password...</string>
+    <string name="phone_number">Phone Number...</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="friends">Friends</string>
+    <string name="selling">Selling</string>
+    <string name="genre">Genre</string>
 </resources>
