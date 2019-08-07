@@ -7,4 +7,6 @@
     <color name="btnSingUp">#39796b</color>
     <color name="btnSignActive">#A9d440</color>
     <color name="white">#fff</color>
+
+    <color name="grey">#808080</color>
 </resources>

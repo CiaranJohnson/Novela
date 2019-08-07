@@ -15,4 +15,9 @@
     <string name="friends">Friends</string>
     <string name="selling">Selling</string>
     <string name="genre">Genre</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile">Profile</string>
 </resources>
