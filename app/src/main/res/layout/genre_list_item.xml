@@ -14,7 +14,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:gravity="center"
-        android:background="@color/btnSignActive"
+        android:background="@color/slategrey"
         />
 
     <androidx.recyclerview.widget.RecyclerView
