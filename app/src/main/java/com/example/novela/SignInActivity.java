@@ -30,6 +30,7 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+        Log.d(TAG, "onCreate: Sign In Activity");
 
         signInBtn = (Button) findViewById(R.id.signInButton);
         backBtn = (Button) findViewById(R.id.backButton);
@@ -71,8 +72,8 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-//        updateUI(currentUser);
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
     }
 
     public void updateUI(FirebaseUser currentUser){
