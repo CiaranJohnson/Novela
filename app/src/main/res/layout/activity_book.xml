@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/mainGreen"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/backgroundWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:id="@+id/pictureLayout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/appName"
+        android:layout_marginStart="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/parent_layout"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/bookCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/murder_on_the_orient_express" />
+
+            </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pictureLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/book_info_bubbles">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:text="Blurb: For twelve long years, the dreaded fortress of Azkaban held an infamous prsioner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be a dedicated follower of the Dark Lord, Voldemort. Now he's escaped. And the Azkaban gurads heard Black muttering in his sleep, 'He's at Hogwarts... he's at Hogwarts.' Is he coming for Harry? Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may be a traior in their midst."
+            android:textColor="@color/backgroundWhite"
+            android:textSize="19sp"
+            android:lines="15"
+            android:maxLines="15"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/appName"
+        android:layout_toRightOf="@+id/pictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/book_info_bubbles">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:text="Title: Harry Potter and the Half Blood Prince"
+            android:fontFamily="@font/robotoslab_regular"
+            android:textColor="@color/backgroundWhite"
+            android:textSize="20sp"
+            android:maxLines="2"
+            android:lines="2"
+            />
+
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:text="Author: J. K. Rowling"
+            android:fontFamily="@font/robotoslab_regular"
+            android:textColor="@color/backgroundWhite"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/keywords"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Keywords: "
+                android:fontFamily="@font/robotoslab_regular"
+                android:textColor="@color/backgroundWhite"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/lilac_button"
+                android:text="Wizard"
+                android:textColor="@color/darkText"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/lilac_button"
+                android:text="Magic"
+                android:textColor="@color/darkText"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/lilac_button"
+                android:text="Wizard"
+                android:textColor="@color/darkText"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/lilac_button"
+                android:text="Magic"
+                android:textColor="@color/darkText"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/lilac_button"
+                android:text="Wizard"
+                android:textColor="@color/darkText"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -5,15 +5,82 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dimgrey"
+    android:background="@color/backgroundWhite"
     tools:context=".MainActivity"
     android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/mainGreen"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:background="@drawable/circle">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profilePicture"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/profile_pic_round"
+                            app:civ_border_color="@color/backgroundWhite"
+                            app:civ_border_width="4dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:background="@color/mainGreen"
+                    android:gravity="end"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:text="@string/app_name"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:textColor="@color/backgroundWhite"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="end" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:text="Lewis' Bookshop"
+                            android:textSize="35sp"
+                            android:textColor="@color/backgroundWhite"
+                            android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="@string/owners_info"
+            android:textSize="10sp"
+            android:textColor="@color/darkText"
+            android:background="@drawable/lilac_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
         
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="10">
+            android:layout_marginTop="120dp"
+            android:weightSum="10"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"

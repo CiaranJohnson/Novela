@@ -10,17 +10,26 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:text="@string/genre"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:background="@color/slategrey"
+        android:textColor="@color/darkText"
+        android:textSize="20sp"
+        android:fontFamily="@font/robotoslab_regular"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
         />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/shelf"
+        android:layout_marginTop="175dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/bookRecyclerView">
+        android:id="@+id/bookRecyclerView"
+        android:layout_marginBottom="16dp">
     </androidx.recyclerview.widget.RecyclerView>
+    
+
 
 </RelativeLayout>

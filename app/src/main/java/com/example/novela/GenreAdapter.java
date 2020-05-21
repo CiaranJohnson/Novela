@@ -1,6 +1,7 @@
 package com.example.novela;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,14 +13,24 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder>{
 
-    private String[] mGenres;
+    private ArrayList<String> mGenres;
+    private HashMap<String, ArrayList<String>> mGenresAndBooks;
+    private Context mContext;
+
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
+
+    private FirebaseFirestore mFirestore;
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -33,14 +44,17 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder>{
             recyclerView = (RecyclerView) itemView.findViewById(R.id.bookRecyclerView);
             recyclerView.setHasFixedSize(true);
 
-
-
         }
 
     }
 
-    public GenreAdapter(String[] genres) {
+    public GenreAdapter(ArrayList<String> genres, HashMap<String, ArrayList<String>> genresAndBooks, Context context) {
         mGenres = genres;
+        mGenresAndBooks = genresAndBooks;
+        mContext = context;
+
+
+        Log.d(TAG, "GenreAdapter: List of Genres past to Adapter: " + mGenres.toString());
     }
 
     @NonNull
@@ -59,17 +73,18 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // This method gets data based on the item selected from the recycler view
-        holder.genre.setText(mGenres[position]);
-        Log.d(TAG, "onBindViewHolder: " + mGenres[position] + " added.");
+        holder.genre.setText(mGenres.get(position));
+        Log.d(TAG, "onBindViewHolder: " + mGenres.get(position) + " added.");
 
-        String[] books = {"A", "B", "C", "D", "E", "F"};
-        mAdapter = new BookAdapter(books);
+
+        mAdapter = new BookAdapter(mGenresAndBooks.get(mGenres.get(position)), mGenres.get(position), mContext);
         recyclerView.setAdapter(mAdapter);
+
     }
 
     @Override
     public int getItemCount() {
-        return mGenres.length;
+        return mGenres.size();
     }
 
 

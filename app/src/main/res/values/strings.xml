@@ -1,10 +1,11 @@
 <resources>
-    <string name="app_name">Novela</string>
+    <string name="app_name">novela</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="email">Email...</string>
     <string name="username">Name...</string>
+    <string name="name">Name</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
     <string name="password">Password...</string>
@@ -20,4 +21,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
+    <string name="buy">Buy</string>
+    <string name="books">Books</string>
+    <string name="owners_info">Owner\'s Info</string>
 </resources>

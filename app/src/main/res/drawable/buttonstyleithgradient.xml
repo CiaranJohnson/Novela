@@ -2,11 +2,11 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
     <gradient
-        android:angle="45"
-        android:startColor="@color/btnSingUp"
-        android:endColor="@color/btnSignActive"/>
+        android:angle="90"
+        android:startColor="@color/mainBlue"
+        android:endColor="@color/mainGreen"
+        />
 
-    <corners android:radius="45dp"/>
     <padding android:bottom="15dp"
         android:right="15dp"
         android:left="15dp"
