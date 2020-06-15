@@ -72,6 +72,7 @@
             android:layout_margin="20dp"
             android:text="Blurb: For twelve long years, the dreaded fortress of Azkaban held an infamous prsioner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be a dedicated follower of the Dark Lord, Voldemort. Now he's escaped. And the Azkaban gurads heard Black muttering in his sleep, 'He's at Hogwarts... he's at Hogwarts.' Is he coming for Harry? Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may be a traior in their midst."
             android:textColor="@color/backgroundWhite"
+            android:fontFamily="@font/robotoslab_regular"
             android:textSize="19sp"
             android:lines="15"
             android:maxLines="15"/>
